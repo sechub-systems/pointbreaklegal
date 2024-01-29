@@ -1,0 +1,39 @@
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 0;
+  --primary-color: rgba(7, 17, 31, 0.9);
+  --hero-bg: rgba(154, 173, 201, 0.9);
+  --heading-fontSize: 2rem;
+  --main-color: hsla(230, 91%, 47%, 1);
+  --dark-color: #000;
+  --mid-color: #98b8c2;
+  --fade-color: #999;
+  --white-color: #fff;
+  --small-text-color: #04223f;
+  --heading-text-color: #004299;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}

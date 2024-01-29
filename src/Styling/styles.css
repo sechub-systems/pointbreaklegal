@@ -1,0 +1,392 @@
+*,
+::after::before {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #808285;
+  box-sizing: border-box;
+}
+.hero--wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: linear-gradient(rgba(1, 5, 250, 0.1), rgba(3, 0, 20, 0.6)),
+    url(../assets/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding-left: 2rem;
+  background-position: center;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.hero--large-text {
+  font-size: 4.5rem;
+  color: #fff;
+  margin-top: -3rem;
+  font-family: "Lato", sans-serif;
+  padding-left: 1rem;
+  font-weight: 500;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+.hero-small-text {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 1.1rem;
+}
+.hero-small-text p {
+  padding-top: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+.hero--wrapper button {
+  margin: 1.5rem 1.1rem;
+}
+
+/* landing page for pbl */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.st0 {
+  fill: #e6e7e8;
+}
+
+.st1 {
+  fill: #d1d3d4;
+}
+
+.st2 {
+  fill: #f4f4f4;
+}
+
+.st3 {
+  fill: #bcbec0;
+}
+
+.st4 {
+  fill: #231f20;
+}
+
+.st5 {
+  fill: #ffffff;
+}
+
+.st6 {
+  fill: #0b2fe5;
+}
+
+.st7 {
+  fill: #c2c4c6;
+}
+
+.st8 {
+  fill: #dbdbdb;
+}
+
+.st9 {
+  fill: #a7a9ac;
+}
+
+.st10 {
+  fill: #808285;
+}
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes sleeping {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sleeping {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#swinger {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  transform-box: fill-box;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+#zone {
+  opacity: 0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+}
+
+#ztwo {
+  opacity: 0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay: 0.4s;
+  -website-animation-delay: 0.4s;
+}
+
+#zthree {
+  opacity: 0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay: 0.7s;
+  -website-animation-delay: 0.7s;
+}
+
+#zfour {
+  opacity: 0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay: 1s;
+  -website-animation-delay: 1s;
+}
+
+#zfive {
+  opacity: 0;
+  -webkit-animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation: sleeping 3.5s ease-in-out forwards infinite;
+  animation-delay: 1.3s;
+  -website-animation-delay: 1.3s;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+svg {
+  max-width: 900px;
+}
+
+/* styles for services */
+.services--wrapper {
+  justify-content: center;
+  display: flex;
+  padding: 4rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: hsla(0, 0%, 89%, 0.773);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.services--content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.services--content h1 {
+  font-size: 1.5rem;
+}
+.services--card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(170, 175, 177);
+  justify-content: center;
+  width: 20rem;
+  height: 16rem;
+  border-radius: 2rem;
+  margin: 2rem;
+  padding: 1.5rem;
+  text-align: left;
+}
+.card h1 {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+/* styles for team */
+.team--wrapper {
+  justify-content: center;
+  display: flex;
+  padding: 4rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.team--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+.team--content h1 {
+  font-weight: 600;
+  color: var(--small-text-color);
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.staffs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.staff--content {
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.staff--left {
+  margin-left: 1rem;
+}
+.staff--left img {
+  width: 30rem;
+  height: 30rem;
+  margin-right: 5rem;
+  object-fit: cover;
+  padding: 0.2rem;
+  border: 1px solid hsla(0, 0%, 73%, 0.74);
+  border-radius: 7px;
+}
+.staff--right {
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+.staff--right h2 {
+  margin-top: -7rem;
+  font-weight: 700;
+}
+.staff--right h3 {
+  font-weight: 600;
+}
+.staff--right p {
+  font-weight: 500;
+}
+/* media queries */
+
+@media screen and (max-width: 769px) {
+  .hero--wrapper {
+    height: 100vh;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero--wrapper button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero--large-text {
+    font-size: 2.8rem;
+  }
+  .hero-small-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .p {
+    display: none;
+  }
+  .card {
+    margin: 1.3rem 0;
+  }
+  .staff--content {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+  }
+  .staff--left img {
+    width: 20rem;
+    height: 22rem;
+    padding: 0;
+    margin: 0;
+  }
+  .staff--left {
+    padding: 0;
+    margin: 0;
+  }
+  .staff--right {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .staff--right h2 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,246 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+  box-sizing: border-box;
+}
+
+.book--btn {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background: var(--main-color);
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+.book--btn:hover {
+  transform-origin: center;
+  transform: scale(1.01);
+  transition: all 0.3s ease-in;
+}
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: -0.9rem;
+  margin-left: 2rem;
+}
+.logo img {
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.nav--container {
+  background-color: var(--white-color);
+  width: 100%;
+  height: 80px;
+}
+.nav--content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.nav--menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav--links {
+  color: var(--primary-color);
+  display: flex;
+  margin-left: 2.8rem;
+  cursor: pointer;
+  transition: all 0.5 ease;
+  align-items: center;
+  font-size: 0.9rem;
+  transition: all 0.5 ease;
+  text-align: center;
+  margin-right: 0.3rem;
+  font-weight: 600;
+  position: relative;
+}
+.nav--item {
+  text-decoration: none;
+  color: var(--primary-color);
+  align-items: center;
+  font-size: 0.9rem;
+  transition: all 0.5 ease;
+  text-align: center;
+  display: flex;
+  margin-right: 0.3rem;
+  font-weight: 600;
+  position: relative;
+}
+.nav--item span {
+  font-size: 0.7rem;
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  top: -10px;
+  width: 17px;
+  justify-content: center;
+  height: 16px;
+  border-radius: 50px;
+  align-items: center;
+  background: var(--heading-text-color);
+  right: -5px;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+.nav--item:hover span {
+  transform-origin: center;
+  transform: scale(1.07);
+  transition: all 0.5s ease-in;
+}
+.nav-btn {
+  margin-left: 15rem;
+}
+.mid-nav-side {
+  margin-right: 4rem;
+}
+/*Navigation when user scrolls down */
+
+/* user && togglemenu styling */
+.right-nav-side {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5rem;
+}
+.user--name {
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+.user--img {
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.user {
+  color: var(--heading-text-color);
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-right: 0.7em;
+  transition: all 0.5 ease;
+  /* margin-right: 2rem; {to be activated in media query} */
+}
+
+.user:hover {
+  transform-origin: center;
+  transition: all 0.5 ease-in;
+  transform: scale(1.05);
+  font-weight: 900;
+  color: rgba(0, 0, 0, 1);
+}
+.toggleMenu {
+  font-size: 1.3rem;
+  color: var(--heading-text-color);
+  cursor: pointer;
+  display: none;
+  margin-right: -3rem;
+}
+
+/* show page you hover on */
+.nav--active {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.nav--item:hover {
+  color: var(--main-color);
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+/* sticky nav */
+.sticky--nav {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: 0px 2px 36px 0px hsla(0, 0%, 0%, 0.253);
+}
+
+/* media queries */
+@media only screen and (max-width: 769px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    transition: all 0.5s ease-in;
+    display: none;
+  }
+
+  .right-nav-side {
+    display: flex;
+  }
+  .nav--active {
+    display: block;
+    transition: all 0.5s ease-in;
+  }
+  .nav--links {
+    padding: 2rem 0;
+  }
+
+  .nav--menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: hsla(0, 0%, 90%, 0.973);
+    z-index: 800;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-btn {
+    position: absolute;
+    bottom: 11rem;
+    left: -9.7rem;
+    /* width: 250px;
+    height: 100%;
+    background: var(--mid-color); */
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggleMenu {
+    display: block;
+  }
+  .logo img {
+    width: 5.9rem;
+    object-fit: cover;
+    height: 5.9rem;
+    margin-left: -2rem;
+    margin-top: -0.7rem;
+  }
+  .user,
+  .toggleMenu {
+    font-size: 1.3rem !important;
+  }
+  .nav--container {
+    height: 60px;
+    width: 100%;
+  }
+}

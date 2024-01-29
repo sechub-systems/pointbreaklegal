@@ -1,0 +1,139 @@
+/* main footer */
+.footer--wrapper {
+  background: rgb(240, 239, 239);
+}
+.footer--content1 {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left--footer {
+  justify-content: left;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.footer--logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  justify-content: space-evenly;
+}
+.footer--logo h1 {
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  font-weight: 600;
+  color: var(--small-heading-text);
+}
+.footer--text {
+  font-size: 1rem;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+.mid--footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 7rem;
+}
+.mid-links {
+  display: flex;
+  font-weight: 600;
+  padding: 1rem 0;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+.mid--links {
+  color: var(--small-heading-text);
+  font-weight: 600;
+}
+.mid--links:hover {
+  color: var(--main-color);
+  transition: all 0.4s ease-out;
+}
+.right--footer {
+  margin-left: 8rem;
+}
+.footer-right-div {
+  padding-bottom: 1rem;
+  display: flex;
+}
+.footer-right-div p {
+  padding-left: 0.5rem;
+}
+.footer-right-links {
+  color: var(--small-heading-text);
+}
+.footer--content2 {
+  position: relative;
+  background: rgb(233, 233, 233);
+}
+
+.copyright {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  left: 43%;
+  top: 50%;
+  font-family: "poppins", sans-serif;
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  color: var(--small-heading-text);
+}
+/* media queries */
+@media screen and (max-width: 760px) {
+  .footer--wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer--content1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .footer--text {
+    padding-bottom: 2rem;
+  }
+  .mid--footer {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  .footer-right-links {
+    font-size: 0.9rem;
+  }
+  .right--footer {
+    margin: 0;
+    word-wrap: break-word;
+  }
+  .footer--content2 {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: left;
+    margin-left: -4rem;
+    padding-right: 7rem;
+  }
+  .copyright {
+    position: relative;
+    color: var(--small-heading-text);
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    margin: 0;
+  }
+  .subscription {
+    background-size: cover;
+  }
+}
